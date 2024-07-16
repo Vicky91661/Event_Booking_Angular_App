@@ -14,14 +14,25 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# Pagespo
 
-## Running end-to-end tests
+## Website 
+    1. Home Page => Show all the Events
+    2. Event Page => Show Single Event with Book Button
+    3. Register & Login => Model Popup
+    4. Booking => Book Ticket in Model Popup
+    5. My Booking => Show Booking Done By Logged User
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Admin
+    1. Register as Event Organizer
+    2. Create Event
+    3. See All Booking Received For Events
 
-## Further help
+### Backend API
+    https://freeapi.miniprojectideas.com/index.html
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+    Controller => EventBoking
+
+### Styling 
+    Tailwind CSS
