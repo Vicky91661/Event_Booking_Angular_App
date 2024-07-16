@@ -23,13 +23,14 @@ export class NavbarComponent {
   OpenLoginPopup(){
     this.isLogin=true;
   }
+
   OpenRegisterPopup(){
     this.isRegister=true;
   }
 
   onRegister(event: Event){
     event.preventDefault()
-   this.eventService.registerUser(this.userObj).subscribe((response:ApiResponse)=>{
+    this.eventService.registerUser(this.userObj).subscribe((response:ApiResponse)=>{
     if(response.result){
       alert('Register suscess')
     }else{
@@ -38,6 +39,7 @@ export class NavbarComponent {
     this.isRegister=false;
    })
   }
+  
 
 
   onLogin(){
@@ -45,10 +47,13 @@ export class NavbarComponent {
     this.eventService.loginUser(this.loginUser).subscribe((response:ApiResponse)=>{
       if(response.result){
         alert('Loged in successfully')
+        localStorage.setItem("User",response.data)
       }else{
         alert(response.message)
       }
-      this.isRegister=false;
+      this.isLogin=false;
      })
   }
+
+
 }
