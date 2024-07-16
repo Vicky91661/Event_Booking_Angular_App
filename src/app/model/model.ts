@@ -32,3 +32,21 @@ export interface OneEvent {
     startDate: string;
     startTime: string;
   }
+
+export class CreateUser {
+    UserId:number;
+    Name: string;
+    Email: string;
+    Password: string;
+    ContactNo: string;
+    Role:string;
+    
+    constructor(){
+        this.UserId=0;
+        this.Name='';
+        this.Email='';
+        this.Password='';
+        this.ContactNo='';
+        this.Role='customer'
+    }
+}
