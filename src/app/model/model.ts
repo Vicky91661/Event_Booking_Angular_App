@@ -50,3 +50,12 @@ export class CreateUser {
         this.Role='customer'
     }
 }
+
+export class LoginUser{
+        Password: string;
+        ContactNo: string;
+        constructor(){
+            this.Password='';
+            this.ContactNo='';
+        }
+}
